@@ -3,6 +3,12 @@
   font-size: 18px;
   line-height: 22px;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+
+  & img {
+    padding-right: 10px;
+  }
 
   &:hover {
     color: #fbd784;

@@ -5,12 +5,33 @@ import './App.scss';
 import FirstImg from './img/01.png';
 import SecondImg from './img/02.png';
 import ThirdImg from './img/03.png';
+import AccountIcon from './img/Icons/account.png';
 
 
 function App() {
   return (
     <>
-      <Nav />
+      <Nav
+        menuItems={[
+          {
+            label: 'Equipment',
+            href: '#01'
+          },
+          {
+            label: 'About Us',
+            href: '#02'
+          },
+          {
+            label: 'Blog',
+            href: '#03'
+          },
+        ]}
+        accountButton={{
+          label: 'Account',
+          href: '#',
+          icon: AccountIcon,
+        }}
+      />
       <Container>
         <Section
           number='01'

@@ -21,7 +21,7 @@ export const Section: React.FC<SectionProps> = ({
   img,
   changePlaces = false,
 }) => (
-  <div className="section">
+  <div className="section" id={number}>
     <div className={`section__content${changePlaces ? ' section__content--order-two' : ''}`}>
       <p className="section__content__number">
         {number}
