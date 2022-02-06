@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Nav, Section } from './components';
+import { Container, Nav, Section, HeroBanner } from './components';
 
 import './App.scss';
 import FirstImg from './img/01.png';
@@ -32,6 +32,7 @@ function App() {
           icon: AccountIcon,
         }}
       />
+      <HeroBanner />
       <Container>
         <Section
           number='01'
